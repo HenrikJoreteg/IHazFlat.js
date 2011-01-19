@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ICanHaz.js Demo</title>
+        <title>IHazFlat.js Demo</title>
         <script src="test/jquery-1.4.4.min.js" type="text/javascript"></script>
-        <script src="ICanHaz.min.js" type="text/javascript"></script>
+        <script src="IHazFlat.min.js" type="text/javascript"></script>
         
-        <script id="user" type="text/html">
+        <script id="user" type="text/x-flat">
             <li>
                 <p>Howdy I&apos;m <a href="http://twitter.com/{{ twitter }}">@{{ twitter }}</a></p>
                 <p>I work for {{ employer }} as a {{ job_title }}.</p>
@@ -29,7 +29,7 @@
                     };
 
                     // Here's all the magic.
-                    user = ich.user(user_data);
+                    user = ihf.user(user_data);
                     
                     // append it to the list, tada! Now go do something more useful with this.
                     $('#user_list').append(user);
@@ -44,7 +44,7 @@
         </style>
     </head>
     <body>
-        <h1>ICanHaz.js Demo</h1>
+        <h1>IHazFlat.js Demo</h1>
         <h3>User List</h3>
         <button id="add_user">Add User</button>
         <ul id="user_list"></ul>
