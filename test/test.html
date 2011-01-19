@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IHazFlat?</title>
+        <link rel="stylesheet" href="qunit/qunit.css" type="text/css" media="screen" />
+        <script src="jquery-1.4.4.min.js"></script>
+        <script src="qunit/qunit.js"></script>
+        <script src="../IHazFlat.min.js"></script>
+        <script src="./tests.js"></script>
+        
+        <!-- Testing templates -->
+        <script id="test1" type="text/x-flat">
+            <p>This is a test of the emergency broadcast system.</p>
+        </script>
+        <script id="test2" type="text/x-flat">
+            <span>Be vewwy vewwy quiet, we're hunting {{prey}}.</span>
+        </script>
+        <script id="welcome" type="text/x-flat">
+            <p>Welcome, {{name}}! {{>winnings}}</p>
+        </script>
+        <script id="version" type="text/x-flat">
+            IHazFlat Tests? YES! You're testing v{{ version }}
+        </script>
+        
+        <script>
+            // write build version to header
+            $(function () {
+                $('#qunit-header').text(ihf.version({version: ihf.VERSION}, true));
+            })
+        </script>
+    </head>
+    <body>
+        <h1 id="qunit-header">IHazFlat?</h1>
+        <h2 id="qunit-banner"></h2>
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests"></ol>
+        <div id="qunit-fixture">test markup, will be hidden</div>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+ ___  ___ ___                _______  __         __        __        
+|   ||   Y   |.---.-..-----.|   _   ||  |.---.-.|  |_     |__|.-----.
+|.  ||.  1   ||  _  ||-- __||.  1___||  ||  _  ||   _| __ |  ||__ --|
+|.  ||.  _   ||___._||_____||.  __)  |__||___._||____||__||  ||_____|
+|:  ||:  |   |              |:  |                        |___|       
+|::.||::.|:. |              |::.|                                    
+`---'`--- ---'              `---'                                    
+                                                                     
+                                                                                  
+If you want a super-duper-lightweight template solution to go along with Zepto.js (works with jQuery too). This may be just what you're looking for.
+
+If you're wanting full mustache.js you probably want ICanHaz.js (http://icanhazjs.com).
+
+What is it?
+IHazFlat is a client-side templating helper for working with Flatstache.js templates in the browser.
+
+What is Flatstache?
+A super-lightweight version of Mustache that removes support for partials and conditionals in the name of simplicity and tiny filesize. Flatstache was written by code wizard @natevw and is also on github at https://github.com/natevw/flatstache.js.
+
+IHazFlat.js is MIT Licensed and includes @natevw's awesometastic flatstache.js for convenience. Also, high five to Chris Wanstrath for inventing Mustache (and founding github.com).
